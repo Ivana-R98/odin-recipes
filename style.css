@@ -17,6 +17,9 @@ h1, .emphasis {
     font-family: 'Courgette', serif;
     text-align: center;
 }
+h2 {
+    text-align: center; 
+}
 h1 {
     text-align:center;
     font-family: 'Courgette', serif;
@@ -46,11 +49,8 @@ p {
 }
 
 h2 {
-<<<<<<< HEAD
-=======
     margin-top: 3rem;
     width: 100%;
->>>>>>> 890bd3b (made the site responsive, edited css)
     text-align: center;
 }
 footer {
