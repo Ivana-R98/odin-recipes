@@ -16,9 +16,8 @@ h1, .emphasis {
     font-size: 24px;
     font-weight: 500;
     font-family: 'Courgette', serif;
-    text-align: center;
 }
-h2 {
+h2, h3, p {
     text-align: center; 
 }
 h1 {
@@ -39,9 +38,7 @@ img {
     width: 100%;
     height: auto;
 }
-p {
-    text-align: center;
-}
+
 
 .container {
     display: flex;
@@ -59,9 +56,14 @@ footer {
     padding: 8px;
     justify-content: center;
 }
-ul {
+ul, ol {
     padding-inline-start: 0;
-    min-width: 300px;
+    width: 80%;
+    max-width: fit-content;
+    list-style-position: inside;
+}
+li {
+    padding: 4px;
 }
 footer li {
     display: inline;
@@ -95,24 +97,34 @@ a:hover {
 @media screen and (max-width: 768px) {
     h1 {
         font-size: 1.5rem;
+        margin: 1.5rem 0;
+        padding: 16px 0;
     }
-    div {
-        width: 85%
+    .container div, p {
+        width: 85%;
+        margin: auto;
+        font-size: 0.9rem;
     }
+    li {
+        margin:0;
+        font-size: 0.9rem;
+    }
+
     .img {
-       width: 420px;
-    }
-    img {
-        width: 100%;
+        width:  100%;  
         height: auto;
     }
     .emphasis {
-        font-size: 1.25rem;
+        font-size: 22px;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
     }
-    ul {
+
+    footer ul {
         display: flex;
         flex-direction: column;
-        gap: 2.2rem;
+        gap: 2rem;
         align-items: center;
     }
     a {
